@@ -71,6 +71,9 @@
                                 <state key="normal" title="Clear Calculator">
                                     <color key="titleColor" red="0.9922674298286438" green="0.98422330617904663" blue="0.97533315420150757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearCalculatorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bh5-ke-mQ6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -114,7 +117,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="hoursLabel" destination="u88-jU-AoI" id="hNe-61-czi"/>
                         <outlet property="itemPriceTxt" destination="G2C-D4-Yn7" id="iz9-5p-k4X"/>
+                        <outlet property="resultLabel" destination="qn6-yh-jhW" id="Hu0-sh-vua"/>
                         <outlet property="wageTxt" destination="jf7-ix-3Qv" id="l4z-vf-d4n"/>
                     </connections>
                 </viewController>
