@@ -8,8 +8,15 @@
 
 import UIKit
 
+
+//@IBDesignable ///make changes happend in storyboard
 class CurrencyTxtField: UITextField{
 
+//
+//    override func prepareForInterfaceBuilder(){
+//        styleTextField()
+//    }
+//
     override func awakeFromNib() {
         super.awakeFromNib()
         styleTextField()
