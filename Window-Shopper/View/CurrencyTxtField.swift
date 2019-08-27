@@ -21,13 +21,10 @@ class CurrencyTxtField: UITextField{
         textAlignment = .center
         
         //Place holder
-        if placeholder == nil {
-            placeholder = " "
-        }
-        
-        let placeHolder = NSAttributedString(string: placeholder!, attributes: [.foregroundColor: #colorLiteral(red: 0.9922674298, green: 0.9842233062, blue: 0.9753331542, alpha: 1)])
-        attributedPlaceholder = placeHolder
-    
+        if let placeHolder = placeholder  {
+        let place = NSAttributedString(string: placeHolder, attributes: [.foregroundColor: #colorLiteral(red: 0.9922674298, green: 0.9842233062, blue: 0.9753331542, alpha: 1)])
+        attributedPlaceholder = place
         textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        }
     }
 }
