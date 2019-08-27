@@ -46,22 +46,58 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qn6-yh-jhW">
+                                <rect key="frame" x="20" y="295" width="335" height="67"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="49"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u88-jU-AoI">
+                                <rect key="frame" x="127.5" y="370" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2C9-nR-UUE"/>
+                                    <constraint firstAttribute="width" constant="120" id="NBC-lz-85E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OA0-Xu-iLT">
+                                <rect key="frame" x="20" y="587" width="335" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="WIt-Ne-fpP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" red="0.9922674298286438" green="0.98422330617904663" blue="0.97533315420150757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5n8-dy-C4U" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4CR-zR-YRU"/>
+                            <constraint firstItem="u88-jU-AoI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dt-Yn-thL"/>
                             <constraint firstItem="5n8-dy-C4U" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7O0-11-WJ4"/>
                             <constraint firstItem="5n8-dy-C4U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DW5-V4-reu"/>
+                            <constraint firstItem="qn6-yh-jhW" firstAttribute="width" secondItem="G2C-D4-Yn7" secondAttribute="width" id="DYe-b3-nTK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OA0-Xu-iLT" secondAttribute="trailing" constant="20" id="EqJ-Ot-617"/>
                             <constraint firstItem="RFp-OS-gXy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ghw-yq-Vkc"/>
                             <constraint firstItem="jf7-ix-3Qv" firstAttribute="top" secondItem="RFp-OS-gXy" secondAttribute="bottom" constant="35" id="HHj-4a-3Pq"/>
                             <constraint firstItem="G2C-D4-Yn7" firstAttribute="top" secondItem="jf7-ix-3Qv" secondAttribute="bottom" constant="25" id="IhD-86-v8j"/>
+                            <constraint firstItem="qn6-yh-jhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JBL-tO-tGw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jf7-ix-3Qv" secondAttribute="trailing" constant="20" id="JQJ-2U-O8N"/>
                             <constraint firstItem="RFp-OS-gXy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="KkS-jg-dYV"/>
                             <constraint firstItem="G2C-D4-Yn7" firstAttribute="height" secondItem="jf7-ix-3Qv" secondAttribute="height" id="Kl4-bH-K8a"/>
+                            <constraint firstItem="qn6-yh-jhW" firstAttribute="top" secondItem="G2C-D4-Yn7" secondAttribute="bottom" constant="45" id="Mz3-AA-jpQ"/>
+                            <constraint firstItem="OA0-Xu-iLT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="S7D-v3-VxP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qn6-yh-jhW" secondAttribute="trailing" constant="20" id="WEi-7H-ocw"/>
                             <constraint firstItem="G2C-D4-Yn7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gND-zP-5HT"/>
                             <constraint firstItem="G2C-D4-Yn7" firstAttribute="leading" secondItem="jf7-ix-3Qv" secondAttribute="leading" id="i3r-pJ-zSE"/>
+                            <constraint firstItem="qn6-yh-jhW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kAe-Wp-eG7"/>
                             <constraint firstItem="5n8-dy-C4U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lm5-au-Hmx"/>
                             <constraint firstItem="G2C-D4-Yn7" firstAttribute="trailing" secondItem="jf7-ix-3Qv" secondAttribute="trailing" id="pxX-My-rme"/>
+                            <constraint firstItem="u88-jU-AoI" firstAttribute="top" secondItem="qn6-yh-jhW" secondAttribute="bottom" constant="8" id="q1C-4z-2If"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OA0-Xu-iLT" secondAttribute="bottom" constant="20" id="tat-Oc-hvy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G2C-D4-Yn7" secondAttribute="trailing" constant="20" id="xac-qH-XVC"/>
                             <constraint firstItem="jf7-ix-3Qv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="z9C-Cd-NGA"/>
                         </constraints>
