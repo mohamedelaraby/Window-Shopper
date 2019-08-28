@@ -10,7 +10,7 @@ import UIKit
 
 class MainVController: UIViewController {
 
-    /*---------------[ MARK:-  @IBOutlets ]----------*/
+/*--------------------[ MARK:-  @IBOutlets ]-------------------------------------*/
     
     @IBOutlet weak var wageTxt: CurrencyTxtField!
     @IBOutlet weak var itemPriceTxt: CurrencyTxtField!
@@ -20,12 +20,13 @@ class MainVController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Create custom button
+        //Draw custom button
         customButton()
     }
 
-    /*------------[ MARK:-  @IBActions ]-----------*/
+/*------------------[ MARK:-  @IBActions ]--------------------------------------------*/
 
+    // [ clearCalculateButtonPressed ] :- Clear the wage, item price and result fields
     @IBAction func clearCalculatorButtonPressed(_ sender: Any) {
         resultLabel.isHidden = true
         hoursLabel.isHidden = true
@@ -35,8 +36,9 @@ class MainVController: UIViewController {
     
     
     
-    /*-------------------------[ MARK:- @Custom Actions ]------------------------------*/
+/*-------------------------[ MARK:- @Custom Actions ]-----------------------------------*/
     
+    // [ customButton ] :- Draw a custom button style
     private func customButton(){
         let calcualteButton = UIButton(frame:CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
         calcualteButton.backgroundColor = #colorLiteral(red: 0.9328799175, green: 0.5411881151, blue: 0.01200272765, alpha: 1)
@@ -55,7 +57,7 @@ class MainVController: UIViewController {
         hoursLabel.isHidden = true
     }
     
-    // @calculate :- Shift the calculate button up when the keyboard appears
+    // [ calculate ] :- Shift the calculate button up when the keyboard appears
     @objc private func calculate(){
     
         //check that the textfields is not empty

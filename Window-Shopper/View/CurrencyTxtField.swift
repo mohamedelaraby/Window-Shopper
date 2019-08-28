@@ -9,11 +9,11 @@
 import UIKit
 
 
-//@IBDesignable ///make changes happend in storyboard
+@IBDesignable ///make changes happend in storyboard
 class CurrencyTxtField: UITextField{
 
     
-    
+    // [ draw ] :- Draw custom currency sign depending on your local location
     override func draw(_ rect: CGRect) {
         // @size :- the Width of currency label
         let size: CGFloat = 20
@@ -26,7 +26,6 @@ class CurrencyTxtField: UITextField{
         currencyLabel.textAlignment = .center
         currencyLabel.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         currencyLabel.layer.cornerRadius = 5.0
-        currencyLabel.layer.masksToBounds = true
         currencyLabel.clipsToBounds = true
         
         
@@ -42,15 +41,18 @@ class CurrencyTxtField: UITextField{
         
     }
 
-//    override func prepareForInterfaceBuilder(){
-//        styleTextField()
-//    }
+    // [ prepareForInterfaceBuilder ] :- Attach custom design drawing to the storyboard
+    override func prepareForInterfaceBuilder(){
+        styleTextField()
+    }
 
+    // [ awakeFromNib ] :- Prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file.
     override func awakeFromNib() {
         super.awakeFromNib()
         styleTextField()
     }
     
+    // [ styleTextField ] :- Custom style of TextField
     private func styleTextField(){
         backgroundColor = #colorLiteral(red: 0.9922674298, green: 0.9842233062, blue: 0.9753331542, alpha: 0.25)
         layer.cornerRadius = 5.0
